@@ -1,0 +1,89 @@
+body {
+    background: #c6c69b !important;
+  font-family: Arial, sans-serif;
+}
+
+
+.contenedor-crear {
+  display: flex;
+   justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.crear-nota-card {
+  background: #f6f6ea;
+    padding: 20px;
+   width: 600px;
+  border-radius: 16px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.input-titulo, .input-texto {
+  width: 100%;
+   margin-bottom: 10px;
+   padding: 8px;
+   border-radius: 8px;
+  border: 1px solid #888;
+}
+
+.input-file {
+  margin-bottom: 10px;
+}
+
+.btn-guardar {
+  background: #556b2f;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-guardar:hover {
+  background: #6b8240;
+}
+
+
+.notas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.nota-card {
+  width: 260px;
+  padding: 15px;
+  border-radius: 16px;
+  background: #d0d8a6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.nota-card p {
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+.nota-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-eliminar {
+  margin-top: 8px;
+  padding: 6px 12px;
+   background: #8b0000;
+   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background: #b30000;
+}
