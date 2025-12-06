@@ -1,0 +1,19 @@
+.nav-olive {
+  background-color: #f6f6ea; 
+  border-bottom: 3px solid #f6f6ea;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  transition: .2s;
+}
+
+.nav-link:hover {
+  color: #dfe6cc !important;
+  transform: translateY(-2px);
+}

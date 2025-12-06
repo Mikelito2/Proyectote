@@ -1,0 +1,45 @@
+<div class="contenedor-crear">
+
+  <div class="crear-nota-card">
+    <input 
+      type="text" 
+      class="input-titulo"
+      placeholder="Título..."
+      [(ngModel)]="titulo"
+    />
+
+    <textarea 
+      class="input-texto" 
+      rows="3"
+      placeholder="Crear una nota..."
+      [(ngModel)]="texto">
+    </textarea>
+
+    <input 
+      type="file"
+      accept="image/*"
+      class="input-file"
+      (change)="onImageSelect($event)"
+    />
+
+    <button class="btn-guardar" (click)="agregarNota()">Guardar Nota</button>
+  </div>
+  
+</div>
+
+<!-- Lista de notas -->
+<div class="notas-grid">
+  <div 
+    class="nota-card"
+    *ngFor="let n of notas; let i = index"
+    [style.background]="n.color"
+  >
+    <h3>{{ n.titulo }}</h3>
+
+    <p>{{ n.texto }}</p>
+
+    <img *ngIf="n.imagen" [src]="n.imagen" class="nota-img">
+
+    <button class="btn-eliminar" (click)="eliminarNota(i)">Eliminar</button>
+  </div>
+</div>
