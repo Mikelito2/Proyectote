@@ -18,15 +18,15 @@ interface Nota {
 })
 export class NotasComponent {
 
-  // Variables que usa ngModel (OBLIGATORIO)
+  
   titulo: string = '';
   texto: string = '';
   imagenSeleccionada: string | undefined;
 
-  // Lista de notas
+  
   notas: Nota[] = [];
 
-  // Colores que rotan
+ //color 5 dif
 private colores = [
   '#ffdede',
   '#fff3cd',
@@ -36,7 +36,7 @@ private colores = [
 ];
   colorIndex = 0;
 
-  // Selección de imagen
+  
   onImageSelect(event: any) {
     const file = event.target.files[0];
     if (file) {
@@ -56,12 +56,12 @@ private colores = [
       color: this.colores[this.colorIndex],
     };
 
-    // Rotar color
+    // colores 
     this.colorIndex = (this.colorIndex + 1) % this.colores.length;
 
     this.notas.push(nueva);
 
-    // Limpiar campos
+    //eliminacion auto
     this.titulo = '';
     this.texto = '';
     this.imagenSeleccionada = undefined;

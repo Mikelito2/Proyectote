@@ -1,19 +1,14 @@
-.nav-olive {
-  background-color: #f6f6ea; 
-  border-bottom: 3px solid #f6f6ea;
+.custom-navbar {
+  background-color: #708238; 
+  padding: 10px 20px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: rgba(0,0,0,0.15) 0px 4px 12px;
 }
 
-.navbar-brand {
-  font-size: 1.4rem;
-}
-
-.nav-link {
+.navbar-brand, .nav-link {
   font-size: 1.1rem;
-  margin-left: 10px;
-  transition: .2s;
 }
 
-.nav-link:hover {
-  color: #dfe6cc !important;
-  transform: translateY(-2px);
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.4);
 }
